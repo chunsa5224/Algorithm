@@ -1,3 +1,4 @@
+package baekjoon;
 
 public class lc273 {
 

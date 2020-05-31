@@ -1,3 +1,4 @@
+package baekjoon;
 
 public class lc97 {
 	public static void main(String args []) {

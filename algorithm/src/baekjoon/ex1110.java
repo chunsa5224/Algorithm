@@ -1,23 +1,23 @@
+package baekjoon;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ex2193 {
+public class ex1110 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int i = Integer.parseInt(br.readLine());
 		
-		int n = Integer.parseInt(br.readLine());
-		long [] dp = new long[n+1];
-		dp[1]=1;
-		if(n>=2) {
-			dp[2]=1;
-		}
-		for(int i=3; i<n+1; i++) {
-			dp[i] = dp[i-1] + dp[i-2];
-		}
-		System.out.println(dp[n]);
+		int count =1;
+		int old =i;
+		int n = i%10*10+(i/10+i%10)%10;
 		
+		for(int j=0; i!=n; j++) {
+			old = n;
+			n=n%10*10+(n/10+n%10)%10;
+			count ++;
+		}
+		System.out.println(count);
 	}
-
 }
