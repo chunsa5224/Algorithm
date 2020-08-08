@@ -5,70 +5,54 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class ex4963 {
-
+	
+	static int[][] graph;
+	static boolean[][] visit;
+	static int w;
+	static int h;
+	static int [] dx = {0,0,-1,1,-1,-1,1,1};
+	static int [] dy = {1,-1,0,0,1,-1,1,-1};
+	
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
+	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String wh = "";
-		ArrayList<Integer> result =new ArrayList<>(); 
-		do{
-			int count=0;
-			wh= br.readLine();
-			int width = Integer.parseInt(wh.split(" ")[0]);
-			int height = Integer.parseInt(wh.split(" ")[1]);
+		while(true) {
+			String s [] = br.readLine().split(" ");
+			w= Integer.parseInt(s[0]);
+			h= Integer.parseInt(s[1]);
+			if(w==0 && h==0) break;
+			int cnt=0;
+			graph = new int [h+1][w+1];
+			visit = new boolean [h+1][w+1];
 			
-			int [][] graph = new int[height][width];
-			
-			for(int i=0;i<height;i++) {
-				String [] temp = br.readLine().split(" ");
-				for(int w=0; w<width; w++) {
-					graph[i][w] = Integer.parseInt(temp[w]);
+			for(int i=1; i<=h;i++) {
+				s=br.readLine().split(" ");
+				for(int j=1; j<=w;j++) {
+					graph[i][j]=Integer.parseInt(s[j-1]);
 				}
 			}
-			
-			for(int h=0; h<height; h++) {
-				for(int w=0; w<width; w++) {
-					if(graph[h][w]==1) {
-						if(h==0 && w==0 ) {
-							count++;
-						}else {
-							if(h>0 && w>0) {
-								if(h==height-1) {
-									if(graph[h-1][w]==0 && graph[h-1][w-1]==0&& graph[h][w-1]==0){
-										count++;
-									}
-								}else {
-									if(graph[h-1][w]==0 && graph[h-1][w-1]==0&& graph[h][w-1]==0 && graph[h+1][w-1]==0 && graph[h+1][w]==0){
-										count++;
-									}
-								}
-							}else if(h==0) {
-								if(height!=1) {
-									if(graph[0][w-1]==0 && graph[1][w-1]==0 && graph[1][w]==0){
-										count++;
-									}
-								}else {
-									if(graph[0][w-1]==0){
-										count++;
-									}
-								}
-							}else if(w==0) {
-								if(graph[h-1][0]==0){
-									count++; 
-								}
-							}
-						}
+			for(int i=1; i<=h; i++) {
+				for(int j=1; j<=w;j++) {
+					if(graph[i][j]==1 && visit[i][j]==false) {
+						cnt+=dfs(i,j);
 					}
 				}
 			}
-			result.add(count);
-		}while(!wh.equals("0 0"));
-		
-		if(result.size()!=1) {
-			for(int i=0; i<result.size()-1;i++){
-				System.out.println(result.get(i));
-			}
+			System.out.println(cnt);
 		}
+	}
+	static int dfs(int x, int y) {
+		visit[x][y]=true;
+		for(int i=0; i<8; i++) {
+			int xx = x+dx[i];
+			int yy = y+dy[i];
+			if(xx>0 && xx<=h && yy>0 && yy<=w) {
+				if(graph[xx][yy]==1 && !visit[xx][yy]) {
+					dfs(xx,yy);
+				}
+			} 
+		}
+		return 1;
 	}
 
 }
