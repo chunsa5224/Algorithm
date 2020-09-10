@@ -7,7 +7,7 @@ import javax.script.ScriptException;
 public class kakao02 {
 
 	public static void main(String[] args) throws ScriptException {
-		String expression ="100-200*300-500+20";
+		String expression ="50*6-3*2";
 		
 		String [] op = {"+","-","*"};
 		int [][] order = {{0,1,2},{0,2,1},{1,0,2},{1,2,0},{2,0,1},{2,1,0}}; 
@@ -22,12 +22,10 @@ public class kakao02 {
 				String [] arr2 = arr1[j].split("\\"+op[order[i][1]]);
 				arr1[j]="";
 				for(int k=0; k<arr2.length; k++) {
-					//System.out.println("arr2 : " + arr2[k]);
 					arr2[k] = engine.eval(arr2[k])+"";
 					arr1[j]+= arr2[k]+op[order[i][1]];
 				}
 				arr1[j]=arr1[j].substring(0,arr1[j].length()-1);
-				//System.out.println("arr1 : " + arr1[j]);
 				arr1[j]=engine.eval(arr1[j])+"";
 				
 				result += arr1[j]+op[order[i][0]];

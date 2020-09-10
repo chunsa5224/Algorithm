@@ -15,6 +15,7 @@ public class boj2667 {
 	static int [] ans ;
 	static int [] dx = {0,0,-1,1};
 	static int [] dy = {-1,1,0,0};
+	static Queue<int [] >queue = new LinkedList<>();
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
@@ -51,6 +52,7 @@ public class boj2667 {
 	static void bfs(int x, int y) {
 		Queue<int []> queue = new LinkedList<>();
 		queue.add(new int [] {x,y});
+		
 		while(!queue.isEmpty()) {
 			int [] index = queue.poll();
 			visit[x][y]=true;
