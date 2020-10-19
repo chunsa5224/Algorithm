@@ -3,7 +3,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+<<<<<<< HEAD
 public class boj1110 {
+=======
+public class ex1110 {
+>>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

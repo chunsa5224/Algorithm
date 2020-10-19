@@ -7,7 +7,11 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
+<<<<<<< HEAD
 public class boj1697 {
+=======
+public class ex1697 {
+>>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

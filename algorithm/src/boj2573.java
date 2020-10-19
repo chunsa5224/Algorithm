@@ -6,7 +6,11 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+<<<<<<< HEAD
 public class boj2573 {
+=======
+public class ex2573 {
+>>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 	static int N,M,total;
 	static int height [][];
 	static int zero [][];

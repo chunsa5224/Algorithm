@@ -8,7 +8,11 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
 
+<<<<<<< HEAD
 public class boj6118 {
+=======
+public class ex6118 {
+>>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 	static int n;
 	static int m;
 	static int dist [];

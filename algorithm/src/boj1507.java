@@ -4,7 +4,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+<<<<<<< HEAD
 public class boj1507 {
+=======
+public class ex1507 {
+>>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 	static int n;
 	static int [][] graph;
 	public static void main(String[] args) throws NumberFormatException, IOException {

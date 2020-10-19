@@ -8,7 +8,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
+<<<<<<< HEAD
 public class boj2206 {
+=======
+public class ex2206 {
+>>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 	static int N,M,total; 
 	static int [][] graph;
 	static boolean possible;

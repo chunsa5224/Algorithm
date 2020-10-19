@@ -7,7 +7,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+<<<<<<< HEAD
 public class boj2667_dfs {
+=======
+public class ex2667_dfs {
+>>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 
 	static int N,apt;
 	static int [][] graph;

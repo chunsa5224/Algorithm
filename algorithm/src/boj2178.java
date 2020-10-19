@@ -6,7 +6,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
+<<<<<<< HEAD
 public class boj2178 {
+=======
+public class ex2178 {
+>>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 	static int [][] maze;
 	static int [] my = {0,0,-1,1};
 	static int [] mx = {1,-1,0,0};

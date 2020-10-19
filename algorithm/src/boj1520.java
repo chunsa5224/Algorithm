@@ -6,7 +6,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
+<<<<<<< HEAD
 public class boj1520 {
+=======
+public class ex1520 {
+>>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 
 	static int [][] graph;
 	static int [][] dp;

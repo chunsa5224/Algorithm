@@ -4,7 +4,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+<<<<<<< HEAD
 public class boj11404 {
+=======
+public class ex11404 {
+>>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 	static int n;
 	static int m;
 	static int graph [][];

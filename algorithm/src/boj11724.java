@@ -6,7 +6,11 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
+<<<<<<< HEAD
 public class boj11724 {
+=======
+public class ex11724 {
+>>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 	static ArrayList<Integer>[] graph;
 	static boolean visit [];
 	public static void main(String[] args) throws IOException {

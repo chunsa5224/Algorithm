@@ -7,7 +7,11 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
+<<<<<<< HEAD
 public class boj5719_unsolved {
+=======
+public class ex5719_unsolved {
+>>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 	static ArrayList<Integer>[] adj;
 	static int [][] weight;
 	static boolean [] visit;

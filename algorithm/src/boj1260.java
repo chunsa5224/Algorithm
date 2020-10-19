@@ -8,7 +8,11 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
 
+<<<<<<< HEAD
 public class boj1260 {
+=======
+public class ex1260 {
+>>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 	static boolean visit [];
 	static ArrayList<Integer>[] list; 
 	
