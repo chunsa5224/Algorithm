@@ -8,11 +8,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-<<<<<<< HEAD
 public class boj7576 {
-=======
-public class ex7576 {
->>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 	
 	static int N,M;
 	static int [][] tomato;

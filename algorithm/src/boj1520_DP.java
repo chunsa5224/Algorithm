@@ -4,11 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-<<<<<<< HEAD
 public class boj1520_DP {
-=======
-public class ex1520_DP {
->>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

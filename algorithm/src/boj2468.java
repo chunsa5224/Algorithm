@@ -5,11 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-<<<<<<< HEAD
 public class boj2468 {
-=======
-public class ex2468 {
->>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 	static int graph [][] ;
 	static boolean visit[][];
 	static int dx [] = {-1,1,0,0};

@@ -5,11 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-<<<<<<< HEAD
 public class boj1987 {
-=======
-public class ex1987 {
->>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 	static int N,M, cnt, ans;
 	static char graph[][];
 	static int [] dx = {-1,1,0,0};

@@ -7,11 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-<<<<<<< HEAD
 public class boj1012 {
-=======
-public class ex1012 {
->>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 	static int [] dx = {0,0,-1,1};
 	static int [] dy = {1,-1,0,0};
 	static int N,M;

@@ -4,11 +4,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-<<<<<<< HEAD
 public class boj4963 {
-=======
-public class ex4963 {
->>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 	
 	static int[][] graph;
 	static boolean[][] visit;

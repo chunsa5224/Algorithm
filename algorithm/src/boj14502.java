@@ -9,11 +9,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-<<<<<<< HEAD
 public class boj14502 {
-=======
-public class ex14502 {
->>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 	static int N,M,safe;
 	static int [][] graph;
 	static int [][] copy;

@@ -8,11 +8,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-<<<<<<< HEAD
 public class boj10026 {
-=======
-public class ex10026 {
->>>>>>> branch 'master' of https://github.com/chunsa5224/Algorithm.git
 	static int N,blind,normal;
 	static int graph[][];
 	static boolean visit[][];
