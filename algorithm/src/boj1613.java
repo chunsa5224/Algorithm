@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class boj1613 {
-//	Floyd Marshall
+//	Floyd Warshall Algorithm
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
@@ -21,9 +21,9 @@ public class boj1613 {
 			map[b][a] = 1;
 		}
 		for(int l=1; l<=k; l++) {
-			for(int j=1; j<=k; j++) {
-				for(int i=1; i<=k; i++) {
-					if(map[j][l]==0 || map[i][l]!= map[l][j]) continue;
+			for(int i=1; i<=k; i++) {
+				for(int j=1; j<=k; j++) {
+					if(map[i][l]==0 || map[i][l]!= map[l][j]) continue;
 					map[i][j]=map[i][l];
 				}
 			}
